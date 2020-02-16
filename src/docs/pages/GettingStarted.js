@@ -58,13 +58,8 @@ export class GettingStarted extends React.Component {
           title="Booking"
           description="Setup your booking"
           historyType="memory"
-          paymentMethods={[
-            {
-              type: 'przelewy24',
-              url:
-                'https://sklep.przelewy24.pl/zakup.php?z24_id_sprzedawcy=93228&z24_kwota=1000&z24_currency=pln&z24_nazwa=Hello%21&z24_language=en&k24_kraj=PL&z24_crc=75ce628f'
-            }
-          ]}
+          paymentTab={false}
+          onFormSubmit={() => console.log('Did it!')}
           appointments={[
             {
               id: 1,

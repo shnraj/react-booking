@@ -47,7 +47,6 @@ class AppointmentInformationComponent extends Component {
         )}
         {user.slotDate && (
           <div>
-            <i className="icon icon-calendar" />
             <span className="selected-appointment-information-title">
               Date:
             </span>
@@ -58,7 +57,6 @@ class AppointmentInformationComponent extends Component {
         )}
         {user.slotTime && (
           <div>
-            <i className="icon icon-clock" />
             <span className="selected-appointment-information-title">
               Time:
             </span>
@@ -69,7 +67,6 @@ class AppointmentInformationComponent extends Component {
         )}
         {user.slotPrice && (
           <div>
-            <i className="icon icon-dollar-sign" />
             <span className="selected-appointment-information-title">
               Price:
             </span>

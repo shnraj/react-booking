@@ -95,8 +95,6 @@ export class AppointmentComponent extends Component {
         />
         {this.state.startDate && (
           <div className="text-center react-booking-appointments">
-            <h3>Available times</h3>
-
             <div className="appointments">
               {appointmentsInDate.map(i => {
                 return (

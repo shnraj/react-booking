@@ -71,21 +71,15 @@ function (_Component) {
         className: "selected-appointment-information-title"
       }, "Phone number:"), _react["default"].createElement("span", {
         className: "selected-appointment-information-value"
-      }, user.customer_phone)), user.slotDate && _react["default"].createElement("div", null, _react["default"].createElement("i", {
-        className: "icon icon-calendar"
-      }), _react["default"].createElement("span", {
+      }, user.customer_phone)), user.slotDate && _react["default"].createElement("div", null, _react["default"].createElement("span", {
         className: "selected-appointment-information-title"
       }, "Date:"), _react["default"].createElement("span", {
         className: "selected-appointment-information-value"
-      }, (0, _moment["default"])(user.slotDate).format('YYYY/MM/DD'))), user.slotTime && _react["default"].createElement("div", null, _react["default"].createElement("i", {
-        className: "icon icon-clock"
-      }), _react["default"].createElement("span", {
+      }, (0, _moment["default"])(user.slotDate).format('YYYY/MM/DD'))), user.slotTime && _react["default"].createElement("div", null, _react["default"].createElement("span", {
         className: "selected-appointment-information-title"
       }, "Time:"), _react["default"].createElement("span", {
         className: "selected-appointment-information-value"
-      }, user.slotTime)), user.slotPrice && _react["default"].createElement("div", null, _react["default"].createElement("i", {
-        className: "icon icon-dollar-sign"
-      }), _react["default"].createElement("span", {
+      }, user.slotTime)), user.slotPrice && _react["default"].createElement("div", null, _react["default"].createElement("span", {
         className: "selected-appointment-information-title"
       }, "Price:"), _react["default"].createElement("span", {
         className: "selected-appointment-information-value"
