@@ -180,10 +180,6 @@ export class ReactBooking extends Component {
                 </ul>
               </div>
 
-              <div className="text-center">
-                <h1>{this.props.title}</h1>
-                <p>{this.props.description}</p>
-              </div>
               <AppointmentInformationComponent
                 module_id={this.state.module_id}
                 user={{}}

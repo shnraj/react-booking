@@ -57,7 +57,7 @@
     "webpack-serve": "3.1.0"
   },
   "scripts": {
-    "prepare": "npm run build:npm",
+    "prepare": "npm run w:build",
     "w:build": "NODE_ENV=production webpack-cli --mode production",
     "w:start": "cp public/index_widget.html public/index.html && webpack-dev-server",
     "start": "cp public/index_normal.html public/index.html && REACT_APP_PLATFORM=\"static\" react-scripts start",

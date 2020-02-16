@@ -72,9 +72,9 @@ export class FormComponent extends Component {
           id: store_data.slotId
         };
         this.props.onFormSubmit(form_data);
-        this.setState({
-          loading: true
-        });
+        // this.setState({
+        //   loading: true
+        // });
       }
     }
   }
@@ -93,34 +93,36 @@ export class FormComponent extends Component {
         location: 'customer_email',
         message: 'Please enter your email address.'
       });
-    } else {
-      if (!/\S+@\S+\.\S+/.test(form.customer_email)) {
-        errors.push({
-          location: 'customer_email',
-          message:
-            'We need your email address in correct form (my.name@gmail.com)'
-        });
-      }
-    }
+    } 
+    // else {
+    //   if (!/\S+@\S+\.\S+/.test(form.customer_email)) {
+    //     errors.push({
+    //       location: 'customer_email',
+    //       message:
+    //         'We need your email address in correct form (my.name@gmail.com)'
+    //     });
+    //   }
+    // }
 
     if (!form.customer_phone) {
       errors.push({
         location: 'customer_phone',
         message: 'Please enter your phone number.'
       });
-    } else {
-      if (
-        !/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$/im.test(
-          form.customer_phone
-        )
-      ) {
-        errors.push({
-          location: 'customer_phone',
-          message:
-            'Enter your phone number in correct format e.g +18182003004000'
-        });
-      }
     }
+    // else {
+    //   if (
+    //     !/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$/im.test(
+    //       form.customer_phone
+    //     )
+    //   ) {
+    //     errors.push({
+    //       location: 'customer_phone',
+    //       message:
+    //         'Enter your phone number in correct format e.g +18182003004000'
+    //     });
+    //   }
+    // }
     return errors;
   }
 

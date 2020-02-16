@@ -12,6 +12,8 @@ export class App extends React.Component {
         description="Setup your booking"
         historyType="memory"
         paymentMethods={{ cash: true, online: false }}
+        paymentTab=false
+        onFormSubmit={() => console.log('Did it!')}
         appointments={[
           {
             id: 1,
@@ -20,7 +22,7 @@ export class App extends React.Component {
             capacity: 10,
             price: {
               amount: 10,
-              curr: '$'
+              curr: '$10'
             }
           }
         ]}
